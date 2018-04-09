@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Favorite Movies</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_add">Add Movie</string>
+    <string name="btn_delete">Delete Movie</string>
+    <string name="btn_show_year">Show List by Year</string>
+    <string name="btn_show_rating">Show List by Rating</string>
+    <string name="label_name">Name :</string>
+    <string name="label_desc">Description :</string>
+    <string name="label_genre">Genre :</string>
+    <string name="label_year">Year :</string>
+    <string name="btn_add_movie">Add Movie</string>
+    <string name="label_save_Changes">Save Changes</string>
+    <string name="label_finish">Finish</string>
+
+    <string-array name="genre">
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,157 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inclass08_group24.mihai.example.com.inclass08_group24.EditFragment">
+
+    <RelativeLayout
+        android:id="@+id/activity_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/editmovietextView2"
+            android:text="@string/label_name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/editmovietextView2"
+            android:layout_toEndOf="@+id/editmovietextView2"
+            android:layout_marginLeft="28dp"
+            android:layout_marginStart="28dp"
+            android:maxLength="50"
+            android:id="@+id/editmovieTextMovieName" />
+
+        <TextView
+            android:text="@string/label_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editmovieTextMovieName"
+            android:layout_alignLeft="@+id/editmovietextView2"
+            android:layout_alignStart="@+id/editmovietextView2"
+            android:layout_marginTop="11dp"
+            android:id="@+id/editmovietextView3" />
+
+        <TextView
+            android:text="@string/label_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editmovieTextDesc"
+            android:layout_alignLeft="@+id/editmovieTextDesc"
+            android:layout_alignStart="@+id/editmovieTextDesc"
+            android:layout_marginTop="47dp"
+            android:maxLength="1000"
+            android:id="@+id/editmovietextView4" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editmovietextView4"
+            android:layout_toRightOf="@+id/editmovietextView3"
+            android:layout_toEndOf="@+id/editmovietextView3"
+            android:id="@+id/editmoviespinnerGenre" />
+
+        <TextView
+            android:text="Rating : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/editmovietextView4"
+            android:layout_alignStart="@+id/editmovietextView4"
+            android:id="@+id/editmovietextView5" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editmovietextView5"
+            android:layout_alignLeft="@+id/editmoviespinnerGenre"
+            android:layout_alignStart="@+id/editmoviespinnerGenre"
+            android:id="@+id/editmovieseekBarRating"
+            android:layout_alignRight="@+id/editmovieTextDesc"
+            android:layout_alignEnd="@+id/editmovieTextDesc"
+            android:max="5" />
+
+        <TextView
+            android:text="@string/label_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editmovieseekBarRating"
+            android:layout_alignLeft="@+id/editmovietextView5"
+            android:layout_alignStart="@+id/editmovietextView5"
+            android:layout_marginTop="35dp"
+            android:id="@+id/editmovietextView6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:layout_below="@+id/editmovieseekBarRating"
+            android:layout_alignLeft="@+id/editmovieseekBarRating"
+            android:layout_alignStart="@+id/editmovieseekBarRating"
+            android:layout_marginTop="20dp"
+            android:maxLength="4"
+            android:id="@+id/editmovieeditTextYear" />
+
+        <TextView
+            android:text="IMDB : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editmovieeditTextYear"
+            android:layout_alignLeft="@+id/editmovietextView6"
+            android:layout_alignStart="@+id/editmovietextView6"
+            android:layout_marginTop="18dp"
+            android:id="@+id/editmovietextView7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/editmovieeditTextYear"
+            android:layout_alignLeft="@+id/editmovieeditTextYear"
+            android:layout_alignStart="@+id/editmovieeditTextYear"
+            android:id="@+id/editmovieeditTextImdbLink" />
+
+        <Button
+            android:text="@string/label_save_Changes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editmovieeditTextImdbLink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:id="@+id/buttonSaveMovie" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editmovieTextDesc"
+            android:layout_below="@+id/editmovietextView3"
+            android:layout_alignLeft="@+id/editmovietextView3"
+            android:layout_alignStart="@+id/editmovietextView3"
+            android:layout_alignRight="@+id/editmovieTextMovieName"
+            android:layout_alignEnd="@+id/editmovieTextMovieName" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

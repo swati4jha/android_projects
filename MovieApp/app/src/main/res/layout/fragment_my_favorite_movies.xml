@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mihai.inclass08_group24.MyFavoriteMoviesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <Button
+            android:text="@string/add_movie"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:id="@+id/addMovie"
+            android:layout_alignStart="@+id/list_rating"
+            android:layout_alignEnd="@+id/list_rating"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="@string/edit_movie"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:id="@+id/edit"
+            android:layout_below="@+id/addMovie"
+            android:layout_alignStart="@+id/addMovie"
+            android:layout_alignEnd="@+id/addMovie"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="@string/delete_movie"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/edit"
+            android:layout_alignStart="@+id/edit"
+            android:layout_alignEnd="@+id/edit"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="@string/show_by_year"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:id="@+id/show_by_year"
+            android:layout_below="@+id/delete"
+            android:layout_alignStart="@+id/list_rating"
+            android:layout_alignEnd="@+id/list_rating"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:text="@string/list_by_rating"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/list_rating"
+            android:layout_below="@+id/show_by_year"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</FrameLayout>

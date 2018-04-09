@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="80dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="73dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/update"
+                android:id="@+id/imageViewSearchDp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="195dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="161dp"
+                android:layout_height="30dp"
+                android:id="@+id/textViewSearcchName"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                app:srcCompat="@android:drawable/ic_input_add"
+                android:id="@+id/imageButtonAdd"
+                android:layout_marginTop="8dp"
+                android:baselineAlignBottom="false"
+                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0dp" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                app:srcCompat="?android:attr/textCheckMark"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/imageButtonAdd"
+                android:id="@+id/imageButtonAccept" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageButtonReject" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                android:layout_alignBottom="@+id/imageButtonAdd"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageButtonDeleteFriend"
+                android:layout_alignStart="@+id/imageButtonReject" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="swati.example.com.homework09_a">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission." />
+
+<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
+    android:supportsRtl="true" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD6OWzrKtU4FbD1pXSNPjmrxT6Kvw296aQ" />
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name=".ProfileActivity" />
+    <activity android:name=".SearchActivity" />
+    <activity android:name=".RequestActivity" />
+    <activity android:name=".TripActivity" />
+    <activity android:name=".TripDetailActivity" />
+    <activity android:name=".CreateTripActivity" />
+    <activity android:name=".ChatActivity" />
+    <activity android:name=".FriendsDetailActivity" />
+    <activity android:name=".MapsActivity" />
+    <activity android:name=".SignUpActivity"></activity>
+</application>
+
+</manifest>

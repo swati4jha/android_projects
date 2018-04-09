@@ -1,0 +1,67 @@
+<resources>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="app_name">My Favorite Movies</string>
+    <string name="title_add_activity">Add Movie</string>
+    <string name="title_edit_activity">Edit Movie</string>
+    <string name="title_delete_activity">Delete Movie</string>
+    <string name="title_movie_by_year">Movies by Year</string>
+    <string name="title_movie_by_rating">Movies by Rating</string>
+    <string name="add_movie">Add Movie</string>
+    <string name="edit_movie">Edit</string>
+    <string name="delete_movie">Delete Movie</string>
+    <string name="show_by_year">Show List by Year</string>
+    <string name="list_by_rating">Show List by Rating</string>
+    <string name="name">Name</string>
+    <string name="add_movie2">Add Movie</string>
+    <string name="description_tx">Description</string>
+    <string name="genre_tx">Genre</string>
+    <string name="rating_tx">Rating</string>
+    <string name="year_tx">Year</string>
+    <string name="imdb_tx">IMDB</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="text_moviesbyyear">Movies by Year</string>
+    <string name="text_title">Title</string>
+    <string name="text_description">Description</string>
+    <string name="text_genre">Genre</string>
+    <string name="text_rating">Rating</string>
+    <string name="text_year">Year</string>
+    <string name="text_imdb">IMDB</string>
+    <string name="text_moviesbyyear2">Movies by Year</string>
+    <string name="button_finish">Finish</string>
+    <string name="text_Byyear_rating">Rating</string>
+    <string name="moviesbyRating">Movies by Rating</string>
+    <string name="text_rating_rating">Rating</string>
+    <string name="movies_by_rating_text">Movies by Rating</string>
+    <string name="selectGenre">Select</string>
+    <string name="addMovie2">Add Movie</string>
+
+
+    <string name="btn_edit">Edit</string>
+    <string name="btn_add">Add Movie</string>
+    <string name="btn_delete">Delete Movie</string>
+    <string name="btn_show_year">Show List by Year</string>
+    <string name="btn_show_rating">Show List by Rating</string>
+    <string name="label_name">Name :</string>
+    <string name="label_desc">Description :</string>
+    <string name="label_genre">Genre :</string>
+    <string name="label_year">Year :</string>
+    <string name="btn_add_movie">Add Movie</string>
+    <string name="label_save_Changes">Save Changes</string>
+    <string name="label_finish">Finish</string>
+    <string-array name="genre_array">
+        <item>Action</item>
+        <item>Animation</item>
+        <item>Comedy</item>
+        <item>Documentary</item>
+        <item>Family</item>
+        <item>Family</item>
+        <item>Horror</item>
+        <item>Crime</item>
+        <item>Others</item>
+    </string-array>
+</resources>

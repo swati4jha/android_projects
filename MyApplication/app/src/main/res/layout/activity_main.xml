@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Assignment :: Homework 1
+    File Name :: MainActivity.java
+    Full name :: Swati jha -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.swati.myapplication.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginTop="23dp"
+        android:id="@+id/editTextinputAmt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/input_hint" />
+
+    <Button
+        android:text="@string/text_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonClear"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonConvert"
+        android:layout_alignStart="@+id/buttonConvert"
+        android:layout_marginBottom="39dp"
+        android:onClick="clearButtonclicked"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputCurrency"
+        android:layout_below="@+id/editTextinputAmt"
+        android:layout_centerHorizontal="true">
+    <RadioButton
+        android:text="@string/radio_aud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextinputAmt"
+        android:id="@+id/radioButtonAud"
+        android:duplicateParentState="false" />
+
+        <RadioButton
+            android:text="@string/radio_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonAud"
+            android:id="@+id/radioButtonCad"
+            android:duplicateParentState="false" />
+
+        <RadioButton
+            android:text="@string/radio_inr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonCad"
+            android:id="@+id/radioButtonInr"
+            android:duplicateParentState="false" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/outputCurrency"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2">
+
+        <RadioButton
+            android:text="@string/radio_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonUsd"
+            android:duplicateParentState="false" />
+
+        <RadioButton
+            android:text="@string/radio_gbp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButtonUsd"
+            android:id="@+id/radioButtonGbp"
+            android:duplicateParentState="false" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/editTextConverted"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        android:layout_above="@+id/buttonClear"
+        android:layout_alignRight="@+id/editTextinputAmt"
+        android:layout_alignEnd="@+id/editTextinputAmt" />
+
+    <Button
+        android:text="@string/text_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonConvert"
+        android:layout_below="@+id/outputCurrency"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/text_convertTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/outputCurrency"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_prefrence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="swati.example.com.homework08_group24.PrefrenceActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Prefrences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="0.07"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="516dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/background_dark">
+
+            <TextView
+                android:text="Temperature Unit"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/textViewTempChange"
+                android:textColor="@android:color/white"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:text="Choose between celsius and fahrenheit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/textViewTempChange1"
+                android:textColor="@android:color/white"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:text="Current City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCityChange"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:text="Change current city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCityChange1"
+                android:paddingLeft="15dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HomeWork08_Group24</string>
+    <string name="curCity_label">Current City not yet set</string>
+    <string name="setCur_label">Set Current City</string>
+</resources>

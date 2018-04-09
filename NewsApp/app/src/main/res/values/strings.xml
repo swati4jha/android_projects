@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CNN News</string>
+    <string name="label_get_news">Get News</string>
+    <string name="btn_finish">Finish</string>
+    <string name="label_published">Published On:</string>
+    <string name="label_description">Description:</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InClass10</string>
+    <string name="notes_keeper">Notes Keeper</string>
+    <string name="btn_add">Add</string>
+    <string-array name="options_array">
+        <item>Priority</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+</resources>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_year"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fav.movie.my_favorite_movies.ShowYearActivity">
+
+    <TextView
+        android:text="Movies By Year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView85" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/YearTitle"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_below="@+id/textView85"
+        android:layout_toRightOf="@+id/textView95"
+        android:layout_toEndOf="@+id/textView95"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:text="Title:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/textView95"
+        android:layout_alignBaseline="@+id/YearTitle"
+        android:layout_alignBottom="@+id/YearTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Description:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView95"
+        android:layout_alignLeft="@+id/textView95"
+        android:layout_alignStart="@+id/textView95"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView115" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView115"
+        android:layout_alignLeft="@+id/textView115"
+        android:layout_alignStart="@+id/textView115"
+        android:layout_marginTop="12dp"
+        android:id="@+id/YearDesc" />
+
+    <TextView
+        android:text="Genre:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YearDesc"
+        android:layout_alignLeft="@+id/YearDesc"
+        android:layout_alignStart="@+id/YearDesc"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView135" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView135"
+        android:layout_alignLeft="@+id/YearTitle"
+        android:layout_alignStart="@+id/YearTitle"
+        android:id="@+id/YearGenre" />
+
+    <TextView
+        android:text="Rating:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView135"
+        android:layout_alignLeft="@+id/textView135"
+        android:layout_alignStart="@+id/textView135"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textViewYear" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewYear"
+        android:layout_alignLeft="@+id/YearGenre"
+        android:layout_alignStart="@+id/YearGenre"
+        android:id="@+id/YearRating" />
+
+    <TextView
+        android:text="Year:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textViewYear"
+        android:layout_alignStart="@+id/textViewYear"
+        android:id="@+id/textView175" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView175"
+        android:layout_alignLeft="@+id/YearRating"
+        android:layout_alignStart="@+id/YearRating"
+        android:id="@+id/YearYear" />
+
+    <TextView
+        android:text="IMDB:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView175"
+        android:layout_alignLeft="@+id/textView175"
+        android:layout_alignStart="@+id/textView175"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView195" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView195"
+        android:layout_alignLeft="@+id/textView195"
+        android:layout_alignStart="@+id/textView195"
+        android:layout_marginTop="16dp"
+        android:id="@+id/YearImdb" />
+
+    <Button
+        android:text="@string/label_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YearImdb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:id="@+id/buttonYearfinish" />
+
+    <Button
+        android:text="&lt;"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonYearfinish"
+        android:layout_toLeftOf="@+id/textView85"
+        android:layout_toStartOf="@+id/textView85"
+        android:id="@+id/buttonYearPrev"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+    <Button
+        android:text="| &lt;"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonYearPrev"
+        android:layout_alignRight="@+id/textViewYear"
+        android:layout_alignEnd="@+id/textViewYear"
+        android:id="@+id/buttonYearFirst"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+    <Button
+        android:text="&gt;"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonYearNext"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/buttonYearfinish"
+        android:layout_alignBottom="@+id/buttonYearfinish"
+        android:layout_toRightOf="@+id/textView85"
+        android:layout_toEndOf="@+id/textView85" />
+
+    <Button
+        android:text="&gt; |"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonYearLast"
+        android:layout_alignTop="@+id/buttonYearNext"
+        android:layout_toRightOf="@+id/buttonYearNext"
+        android:layout_toEndOf="@+id/buttonYearNext"
+        style="@style/Widget.AppCompat.Button.Small" />
+
+</RelativeLayout>

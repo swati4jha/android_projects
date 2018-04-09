@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeightEstimator</string>
+    <string name="target_weight">Target Weight</string>
+    <string name="bmi_ranges">BMI Ranges</string>
+    <string name="lb">lb</string>
+    <string name="height">Height</string>
+    <string name="feet">feet</string>
+    <string name="inches">Inches</string>
+    <string name="btn_cal">Calculate Weight</string>
+    <string name="msg">your weight should be in between</string>
+</resources>

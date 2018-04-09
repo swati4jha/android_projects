@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="swati.example.com.homework08_group24.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/images"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:text="Weather App"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textStyle="normal|bold"
+                android:textAlignment="textStart"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:autoText="false"
+                android:textColor="@android:color/white"
+                android:gravity="start"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/menu1"
+                android:scaleType="fitXY"
+                android:background="@android:color/background_dark"
+                android:onClick="showPopup"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextCity"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="City Name (i.e. Charlotte)" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editTextCity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/editTextCountry"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Country Name (i.e. US)" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl1"
+        android:layout_below="@+id/appbar"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="@string/curCity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:id="@+id/textViewCurCity" />
+
+        <Button
+            android:text="@string/setCur_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSetCurCity"
+            android:layout_below="@+id/textViewCurCity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:textAllCaps="false"
+            style="@style/Widget.AppCompat.Button.Small" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout1"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+    <Button
+        android:text="Search City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSearch"
+        android:textAllCaps="false"
+        android:layout_below="@+id/editTextCountry"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="There are no citied to display. Search the city from the search box and save."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewMsg"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

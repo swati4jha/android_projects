@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="80dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="73dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                app:srcCompat="@drawable/update"
+                android:id="@+id/imageViewTripDp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="161dp"
+                android:layout_height="30dp"
+                android:id="@+id/textTripName"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewLocation"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                app:srcCompat="@android:drawable/ic_delete"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageButtonUnjoin" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                android:id="@+id/imageButtonDelete"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="42dp"
+                app:srcCompat="@android:drawable/ic_menu_add"
+                android:layout_alignBottom="@+id/imageButtonDelete"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageButtonjoin" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

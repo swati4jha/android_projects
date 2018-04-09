@@ -1,0 +1,17 @@
+<!-- Assignment :: Homework 1
+    File Name :: MainActivity.java
+    Full name :: Swati jha -->
+
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="input_hint">Input Amount</string>
+    <string name="radio_aud">AUD</string>
+    <string name="radio_cad">CAD</string>
+    <string name="radio_inr">INR</string>
+    <string name="radio_usd">USD</string>
+    <string name="radio_gbp">GBP</string>
+    <string name="text_convert">Convert</string>
+    <string name="text_convertTo">Convert To</string>
+    <string name="text_clear">Clear</string>
+
+</resources>
